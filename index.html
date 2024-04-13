@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            background-color: black;
+            background-image: url(kbc\ 1.jpg);
+            background-size: cover;
+            object-fit: cover;
+        }
+
+        .app {
+            background-color: #fff;
+            background: transparent;
+            width: 900%;
+            max-width: 650px;
+            margin: 340px auto 0;
+            border-radius: 10px;
+            padding: 30px;
+            
+        }
+
+        .app h1 {
+            font-size: 25px;
+            color: #001e4d;
+            font-weight: 600;
+            border-bottom: 1px solid #333;
+            padding-bottom: 30px;
+            text-transform: capitalize;
+        }
+
+        .quiz {
+            padding: 20px 0;
+        }
+
+        .quiz h2 {
+            font-size: 18px;
+            color: #001e4d;
+            font-weight: 600;
+            text-transform: capitalize;
+            color: rgb(255, 255, 255);
+            height: 40px;
+            display: flex;
+            justify-content: center;
+           align-items: center;
+            /* text-transform: uppercase; */
+            background-color: rgba(27, 1, 100, 0.952);
+            border: 2px solid yellow;
+            border-radius: 40px;
+            /* margin-left: 250px;
+            margin-right: 250px; */
+            letter-spacing: 1px;
+            padding-top: 7px;
+        }
+
+        .btn {
+            background: #fff;
+            color: #ffffff;
+            font-weight: 500;
+            /* width: 50%; */
+            /* gap: 5PX; */
+            border: 1px solid #222;
+            padding: 10px;
+            padding-right: 200px;
+            margin: 8px 5px;
+            text-align: left;
+            border-radius: 4px;
+            cursor: pointer;
+            border: 2px solid yellow;
+            border-radius: 40px;
+            padding-left: 10px;
+            padding-top: 3px;
+            background-color: rgba(27, 1, 100, 0.952);
+text-transform: capitalize;
+display:inline-block ;
+align-items: center;
+        }
+
+        .btn:hover:not([disabled]) {
+            background:  rgba(27, 1, 100, 0.678);
+            color: #fff;
+
+        }
+.btn:disabled{
+    cursor: no-drop;
+}
+        #next-btn {
+            background-color: #001e4d;
+            color: #fff;
+            font-weight: 500;
+            border: 0;
+            padding: 10px;
+            margin: 20px auto 0;
+            border-radius: 4px;
+            cursor: pointer;
+            display: none;
+        }
+
+        .correct{
+            background: #05cf53;
+        }
+        .incorrect{
+            background: #f86161;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app">
+        <!-- <h1>simple quiz</h1> -->
+        <div class="quiz">
+            <h2 id="question">question goes here</h2>
+            <div id="answer-buttons">
+                <button class="btn">answer 1</button>
+                <button class="btn">answer 2</button>
+                <button class="btn">answer 3</button>
+                <button class="btn">answer 4</button>
+            </div>
+            <button id="next-btn">next</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
